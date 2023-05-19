@@ -8,7 +8,8 @@
 import React, {useState} from 'react';
 import {Button, Text, View} from 'react-native';
 import User from './components/User';
-
+import InputVal from './components/InputTextValue';
+import style from './style';
 // function Info() {
 //   console.warn('Hey! This is function call');
 // }
@@ -30,7 +31,7 @@ const App = () => {
       {/* <Text style={{fontSize: 30}}>{company}</Text>
       <Button title="on Press" color={'red'} onPress={Info} />
       <Button title="Press" onPress={updateName} /> */}
-      <Button
+      {/* <Button
         title="Update Name"
         onPress={() => {
           setName('Mike'),
@@ -39,7 +40,8 @@ const App = () => {
             setAdd('Mumbai');
         }}
       />
-      <User myName={name} myAge={age} myEmail={email} myAddress={add} />
+      <User myName={name} myAge={age} myEmail={email} myAddress={add} /> */}
+      <InputVal />
     </View>
   );
 };
