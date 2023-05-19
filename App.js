@@ -10,6 +10,7 @@ import {Button, Text, View} from 'react-native';
 import User from './components/User';
 import InputVal from './components/InputTextValue';
 import style from './style';
+import UserForm from './form/FormUI';
 // function Info() {
 //   console.warn('Hey! This is function call');
 // }
@@ -41,7 +42,8 @@ const App = () => {
         }}
       />
       <User myName={name} myAge={age} myEmail={email} myAddress={add} /> */}
-      <InputVal />
+      {/* <InputVal /> */}
+      <UserForm />
     </View>
   );
 };
