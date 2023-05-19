@@ -14,6 +14,14 @@ export default styles = StyleSheet.create({
     margin: 5,
     padding: 10,
   },
+  list: {
+    color: 'black',
+    backgroundColor: 'lightgray',
+    margin: 5,
+    padding: 20,
+    borderRadius: 5,
+    fontSize: 20,
+  },
 
   // lable: {
   //   fontSize: 20,

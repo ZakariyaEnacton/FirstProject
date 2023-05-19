@@ -11,6 +11,8 @@ import User from './components/User';
 import InputVal from './components/InputTextValue';
 import style from './style';
 import UserForm from './form/FormUI';
+import ListData from './list/ListWithFlatList';
+import ListWithMAp from './list/ListWithMap';
 // function Info() {
 //   console.warn('Hey! This is function call');
 // }
@@ -43,7 +45,10 @@ const App = () => {
       />
       <User myName={name} myAge={age} myEmail={email} myAddress={add} /> */}
       {/* <InputVal /> */}
-      <UserForm />
+      {/* <UserForm /> */}
+      {/* <ListData /> */}
+
+      <ListWithMAp />
     </View>
   );
 };
