@@ -5,10 +5,10 @@ const User = val => {
   // console.warn(props.name);
   return (
     <View style={style.view}>
-      <Text style={ExStyle.button}>Name : {val.myName}</Text>
+      <Text style={ExStyle.textView}>Name : {val.myName}</Text>
       <Text style={style.text}>Age : {val.myAge}</Text>
       <Text style={style.text}>Email : {val.myEmail}</Text>
-      <Text style={style.text}>Add : {val.myAddress}</Text>
+      <Text style={[style.text, ExStyle.textView]}>Add : {val.myAddress}</Text>
     </View>
   );
 };
