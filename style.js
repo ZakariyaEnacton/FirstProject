@@ -1,8 +1,19 @@
 import {StyleSheet} from 'react-native';
 
 export default styles = StyleSheet.create({
+  grid: {
+    fontSize: 25,
+    backgroundColor: '#577D6A',
+    width: 110,
+    height: 110,
+    textAlign: 'center',
+    textAlignVertical: 'center',
+    margin: 10,
+    color: '#DAE2DE',
+    borderRadius: 10,
+  },
   text: {
-    fontSize: 40,
+    fontSize: 30,
   },
   view: {
     margin: 10,

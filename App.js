@@ -7,12 +7,13 @@
 
 import React, {useState} from 'react';
 import {Button, Text, View} from 'react-native';
-import User from './components/User';
-import InputVal from './components/InputTextValue';
-import style from './style';
-import UserForm from './form/FormUI';
-import ListData from './list/ListWithFlatList';
+// import User from './components/User';
+// import InputVal from './components/InputTextValue';
+// import style from './style';
+// import UserForm from './form/FormUI';
+// import ListData from './list/ListWithFlatList';
 import ListWithMAp from './list/ListWithMap';
+import GridLayout from './list/Grid';
 // function Info() {
 //   console.warn('Hey! This is function call');
 // }
@@ -24,10 +25,10 @@ const App = () => {
 
   // let person = 'Jhon';
   // const [company, setCompany] = useState('EnactOn');
-  const [name, setName] = useState('Jhon');
-  const [age, setAge] = useState(20);
-  const [email, setEmail] = useState('jhon@test.com');
-  const [add, setAdd] = useState('Surat');
+  // const [name, setName] = useState('Jhon');
+  // const [age, setAge] = useState(20);
+  // const [email, setEmail] = useState('jhon@test.com');
+  // const [add, setAdd] = useState('Surat');
 
   return (
     <View>
@@ -47,8 +48,8 @@ const App = () => {
       {/* <InputVal /> */}
       {/* <UserForm /> */}
       {/* <ListData /> */}
-
       <ListWithMAp />
+      {/* <GridLayout /> */}
     </View>
   );
 };

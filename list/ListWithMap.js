@@ -54,9 +54,11 @@ const ListWithMAp = () => {
     <View>
       <Text style={style.text}>List with map</Text>
       <ScrollView style={{marginBottom: 110}}>
-        {dataList.map(data => (
-          <Text style={style.list}>{data.name}</Text>
-        ))}
+        <View style={{flex: 1, flexDirection: 'row', flexWrap: 'wrap'}}>
+          {dataList.map(data => (
+            <Text style={style.grid}>{data.name}</Text>
+          ))}
+        </View>
       </ScrollView>
     </View>
   );
