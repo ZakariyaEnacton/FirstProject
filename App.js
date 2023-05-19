@@ -14,13 +14,12 @@ import User from './components/User';
 // }
 
 const App = () => {
-  // const [company, setCompany] = useState('EnactOn');
-
   // function updateName() {
   //   setCompany('EnactOn Technology');
   // }
 
   // let person = 'Jhon';
+  // const [company, setCompany] = useState('EnactOn');
   const [name, setName] = useState('Jhon');
   const [age, setAge] = useState(20);
   const [email, setEmail] = useState('jhon@test.com');
@@ -28,9 +27,9 @@ const App = () => {
 
   return (
     <View>
-      {/* <Text style={{fontSize: 30}}>{company}</Text> */}
-      {/* <Button title="on Press" color={'red'} onPress={Info} /> */}
-      {/* <Button title="Press" onPress={updateName} /> */}
+      {/* <Text style={{fontSize: 30}}>{company}</Text>
+      <Button title="on Press" color={'red'} onPress={Info} />
+      <Button title="Press" onPress={updateName} /> */}
       <Button
         title="Update Name"
         onPress={() => {
