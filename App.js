@@ -6,7 +6,7 @@
  */
 
 import React, {Component, useState} from 'react';
-import {Button, Text, View} from 'react-native';
+import {Button, Text, TextInput, View} from 'react-native';
 
 // import User from './components/User';
 // import InputVal from './components/InputTextValue';
@@ -61,6 +61,18 @@ import Student from './components/Student';
 // };
 
 class App extends Component {
+  constructor() {
+    super();
+    this.state = {
+      name: 'Sam',
+    };
+  }
+
+  updateName(val) {
+    this.setState({
+      name: val,
+    });
+  }
   greeting() {
     console.warn('Hey! there,from App component class');
   }
@@ -68,12 +80,23 @@ class App extends Component {
     return (
       <View>
         <Text style={{fontSize: 24, color: 'green', margin: 5}}>
-          Class Component
+          {this.state.name}
         </Text>
+        <View>
+          <TextInput
+            style={{
+              borderWidth: 1,
+              margin: 10,
+              borderRadius: 10,
+            }}
+            onChangeText={text => this.updateName(text)}
+            placeholder="Enter Name"
+          />
+        </View>
         <View style={{margin: 10}}>
           <Button title="press" onPress={this.greeting} />
         </View>
-        <Student />
+        <Student name={this.state.name} />
       </View>
     );
   }
