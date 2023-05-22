@@ -5,8 +5,8 @@ class Student extends Component {
   render() {
     return (
       <View>
-        <Text style={{fontSize: 24, color: 'green', margin: 5}}>
-          Student Component
+        <Text style={{fontSize: 24, color: 'red', margin: 5}}>
+          Student Name : {this.props.name}
         </Text>
       </View>
     );
