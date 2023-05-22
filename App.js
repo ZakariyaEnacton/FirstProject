@@ -19,6 +19,7 @@ import CompWithloop from './components/ComponentInLoop';
 import SectList from './components/SectionList';
 import Student from './components/Student';
 import UseEffect from './hooks/UseEffect';
+import HideAndShow from './components/HIdeAndShow';
 // function Info() {
 //   console.warn('Hey! This is function call');
 // }
@@ -57,7 +58,8 @@ const App = () => {
       {/* <GridLayout /> */}
       {/* <CompWithloop /> */}
       {/* <SectList /> */}
-      <UseEffect />
+      {/* <UseEffect /> */}
+      <HideAndShow />
     </View>
   );
 };
