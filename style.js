@@ -13,7 +13,7 @@ export default styles = StyleSheet.create({
     borderRadius: 10,
   },
   text: {
-    fontSize: 30,
+    fontSize: 25,
   },
   view: {
     margin: 10,
@@ -34,6 +34,18 @@ export default styles = StyleSheet.create({
     fontSize: 20,
   },
 
+  item: {
+    flex: 1,
+    fontSize: 14,
+    color: '#353535',
+    margin: 5,
+  },
+  box: {
+    flexDirection: 'row',
+    borderWidth: 2,
+    margin: 5,
+    borderColor: '#56826C',
+  },
   // lable: {
   //   fontSize: 20,
   //   color: 'brown',

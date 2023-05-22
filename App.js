@@ -7,13 +7,16 @@
 
 import React, {useState} from 'react';
 import {Button, Text, View} from 'react-native';
+
 // import User from './components/User';
 // import InputVal from './components/InputTextValue';
 // import style from './style';
 // import UserForm from './form/FormUI';
 // import ListData from './list/ListWithFlatList';
-import ListWithMAp from './list/ListWithMap';
-import GridLayout from './list/Grid';
+// import ListWithMAp from './list/ListWithMap';
+// import GridLayout from './list/Grid';
+import CompWithloop from './components/ComponentInLoop';
+import SectList from './components/SectionList';
 // function Info() {
 //   console.warn('Hey! This is function call');
 // }
@@ -48,8 +51,10 @@ const App = () => {
       {/* <InputVal /> */}
       {/* <UserForm /> */}
       {/* <ListData /> */}
-      <ListWithMAp />
+      {/* <ListWithMAp /> */}
       {/* <GridLayout /> */}
+      {/* <CompWithloop /> */}
+      <SectList />
     </View>
   );
 };
