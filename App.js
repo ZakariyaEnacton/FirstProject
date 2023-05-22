@@ -18,6 +18,7 @@ import {Button, Text, TextInput, View} from 'react-native';
 import CompWithloop from './components/ComponentInLoop';
 import SectList from './components/SectionList';
 import Student from './components/Student';
+import UseEffect from './hooks/UseEffect';
 // function Info() {
 //   console.warn('Hey! This is function call');
 // }
@@ -55,7 +56,8 @@ const App = () => {
       {/* <ListWithMAp /> */}
       {/* <GridLayout /> */}
       {/* <CompWithloop /> */}
-      <SectList />
+      {/* <SectList /> */}
+      <UseEffect />
     </View>
   );
 };
