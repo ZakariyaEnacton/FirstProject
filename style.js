@@ -1,4 +1,4 @@
-import {StyleSheet} from 'react-native';
+import {Platform, StyleSheet} from 'react-native';
 
 export default style = StyleSheet.create({
   radioMain: {
@@ -207,6 +207,10 @@ export default style = StyleSheet.create({
     elevation: 10,
     textAlign: 'center',
     color: 'white',
+  },
+  platformOsText: {
+    fontSize: 18,
+    color: Platform.OS == 'android' ? '#00582b' : '#005855',
   },
   // lable: {
   //   fontSize: 20,

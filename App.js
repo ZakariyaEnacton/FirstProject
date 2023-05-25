@@ -17,6 +17,7 @@ import style from './style';
 import DialogModal from './components/DialogModal';
 import PressBtn from './components/ButtonPressable';
 import Statusbar from './components/Statusbar';
+import CheckPlatform from './components/CheckPlatformOs';
 
 // function Info() {
 //   console.warn('Hey! This is function call');
@@ -36,8 +37,9 @@ const App = () => {
   const [selectRadio, setSelectRadio] = useState();
 
   return (
-    <View style={style.radioMain}>
-      <Statusbar />
+    <View>
+      <CheckPlatform />
+      {/* <Statusbar /> */}
       {/* <PressBtn /> */}
       {/* <DialogModal /> */}
       {/* <ActInd /> */}
