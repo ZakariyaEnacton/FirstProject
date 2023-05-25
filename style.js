@@ -3,8 +3,7 @@ import {StyleSheet} from 'react-native';
 export default style = StyleSheet.create({
   radioMain: {
     flex: 1,
-    // alignItems: 'center',
-    justifyContent: 'flex-end',
+    justifyContent: 'center',
   },
   radioText: {
     fontSize: 18,
@@ -197,6 +196,17 @@ export default style = StyleSheet.create({
     color: '#fff',
     shadowColor: '#fff',
     elevation: 10,
+  },
+  pressBtn: {
+    fontSize: 18,
+    backgroundColor: '#0d6f2f ',
+    padding: 10,
+    margin: 10,
+    borderRadius: 10,
+    shadowColor: '#000',
+    elevation: 10,
+    textAlign: 'center',
+    color: 'white',
   },
   // lable: {
   //   fontSize: 20,

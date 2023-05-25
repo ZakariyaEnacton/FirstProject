@@ -15,6 +15,8 @@ import DynaRadio from './components/DynamicRadio';
 import ActInd from './components/ActivityIndic';
 import style from './style';
 import DialogModal from './components/DialogModal';
+import PressBtn from './components/ButtonPressable';
+import Statusbar from './components/Statusbar';
 
 // function Info() {
 //   console.warn('Hey! This is function call');
@@ -35,7 +37,9 @@ const App = () => {
 
   return (
     <View style={style.radioMain}>
-      <DialogModal />
+      <Statusbar />
+      {/* <PressBtn /> */}
+      {/* <DialogModal /> */}
       {/* <ActInd /> */}
       {/* <DynaRadio /> */}
       {/* <RadioButtonUI /> */}
