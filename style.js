@@ -3,8 +3,8 @@ import {StyleSheet} from 'react-native';
 export default style = StyleSheet.create({
   radioMain: {
     flex: 1,
-    alignItems: 'center',
-    justifyContent: 'center',
+    // alignItems: 'center',
+    justifyContent: 'flex-end',
   },
   radioText: {
     fontSize: 18,
@@ -159,6 +159,44 @@ export default style = StyleSheet.create({
   },
   primary: {
     backgroundColor: 'blue',
+  },
+  modalOpen: {
+    fontSize: 18,
+    textAlign: 'center',
+    backgroundColor: '#558853',
+    padding: 10,
+    margin: 10,
+    borderRadius: 10,
+    color: '#fff',
+    shadowColor: '#fff',
+    elevation: 10,
+  },
+  modalWrapper: {
+    flex: 1,
+    justifyContent: 'center',
+    alignItems: 'center',
+  },
+  modalView: {
+    backgroundColor: '#fff',
+    padding: 40,
+    borderRadius: 20,
+    shadowColor: '#000',
+    elevation: 10,
+  },
+  modalText: {
+    fontSize: 20,
+    marginBottom: 10,
+  },
+  modalClose: {
+    fontSize: 18,
+    textAlign: 'center',
+    backgroundColor: '#6D3205',
+    padding: 10,
+    margin: 10,
+    borderRadius: 10,
+    color: '#fff',
+    shadowColor: '#fff',
+    elevation: 10,
   },
   // lable: {
   //   fontSize: 20,

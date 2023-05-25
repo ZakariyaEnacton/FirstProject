@@ -14,6 +14,7 @@ import RadioButtonUI from './components/Radio';
 import DynaRadio from './components/DynamicRadio';
 import ActInd from './components/ActivityIndic';
 import style from './style';
+import DialogModal from './components/DialogModal';
 
 // function Info() {
 //   console.warn('Hey! This is function call');
@@ -34,7 +35,8 @@ const App = () => {
 
   return (
     <View style={style.radioMain}>
-      <ActInd />
+      <DialogModal />
+      {/* <ActInd /> */}
       {/* <DynaRadio /> */}
       {/* <RadioButtonUI /> */}
       {/* <SectList /> */}
