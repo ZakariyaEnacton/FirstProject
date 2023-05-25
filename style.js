@@ -10,10 +10,10 @@ export default style = StyleSheet.create({
     fontSize: 18,
   },
   radio: {
-    height: 40,
-    width: 40,
+    height: 30,
+    width: 30,
     borderWidth: 2,
-    borderRadius: 20,
+    borderRadius: 15,
     margin: 10,
   },
   radioWrapper: {
@@ -22,9 +22,9 @@ export default style = StyleSheet.create({
   },
   radioBg: {
     backgroundColor: 'gray',
-    height: 30,
-    width: 30,
-    borderRadius: 20,
+    height: 20,
+    width: 20,
+    borderRadius: 10,
     margin: 3,
   },
   main: {

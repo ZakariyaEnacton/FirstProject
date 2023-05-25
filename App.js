@@ -11,6 +11,8 @@ import {Button, Text, TextInput, View, TouchableOpacity} from 'react-native';
 // import SectList from './components/SectionList';
 import StyleWithButton from './components/StyleWithButton';
 import RadioButtonUI from './components/Radio';
+import DynaRadio from './components/DynamicRadio';
+import ActInd from './components/ActivityIndic';
 import style from './style';
 
 // function Info() {
@@ -28,42 +30,12 @@ const App = () => {
   // const [age, setAge] = useState(20);
   // const [email, setEmail] = useState('jhon@test.com');
   // const [add, setAdd] = useState('Surat');
-  const [selectRadio, setSelectRadio] = useState(1);
+  const [selectRadio, setSelectRadio] = useState();
 
   return (
     <View style={style.radioMain}>
-      <TouchableOpacity onPress={() => setSelectRadio(1)}>
-        <View style={style.radioWrapper}>
-          <View style={style.radio}>
-            {selectRadio === 1 ? <View style={style.radioBg}></View> : null}
-          </View>
-          <Text style={style.radioText}>Radio Button 1</Text>
-        </View>
-      </TouchableOpacity>
-      <TouchableOpacity onPress={() => setSelectRadio(2)}>
-        <View style={style.radioWrapper}>
-          <View style={style.radio}>
-            {selectRadio === 2 ? <View style={style.radioBg}></View> : null}
-          </View>
-          <Text style={style.radioText}>Radio Button 2</Text>
-        </View>
-      </TouchableOpacity>
-      <TouchableOpacity onPress={() => setSelectRadio(3)}>
-        <View style={style.radioWrapper}>
-          <View style={style.radio}>
-            {selectRadio === 3 ? <View style={style.radioBg}></View> : null}
-          </View>
-          <Text style={style.radioText}>Radio Button 3</Text>
-        </View>
-      </TouchableOpacity>
-      <TouchableOpacity onPress={() => setSelectRadio(4)}>
-        <View style={style.radioWrapper}>
-          <View style={style.radio}>
-            {selectRadio === 4 ? <View style={style.radioBg}></View> : null}
-          </View>
-          <Text style={style.radioText}>Radio Button 4</Text>
-        </View>
-      </TouchableOpacity>
+      <ActInd />
+      {/* <DynaRadio /> */}
       {/* <RadioButtonUI /> */}
       {/* <SectList /> */}
       {/* <Text style={{fontSize: 30}}>{company}</Text>
