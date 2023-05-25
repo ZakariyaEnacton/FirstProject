@@ -1,8 +1,93 @@
 import {StyleSheet} from 'react-native';
 
 export default style = StyleSheet.create({
+  radioMain: {
+    flex: 1,
+    alignItems: 'center',
+    justifyContent: 'center',
+  },
+  radioText: {
+    fontSize: 18,
+  },
+  radio: {
+    height: 40,
+    width: 40,
+    borderWidth: 2,
+    borderRadius: 20,
+    margin: 10,
+  },
+  radioWrapper: {
+    flexDirection: 'row',
+    alignItems: 'center',
+  },
+  radioBg: {
+    backgroundColor: 'gray',
+    height: 30,
+    width: 30,
+    borderRadius: 20,
+    margin: 3,
+  },
   main: {
-    backgroundColor: 'green',
+    flex: 1,
+  },
+  box1: {
+    flex: 1,
+    backgroundColor: '#0A8A4A',
+    flexDirection: 'row',
+  },
+  box2: {
+    flex: 1,
+    backgroundColor: '#5EDC9D',
+    flexDirection: 'row',
+  },
+  box3: {
+    flex: 1,
+    backgroundColor: '#68A285',
+  },
+  innerBox1: {
+    flex: 1,
+    backgroundColor: '#1D95C1',
+    margin: 10,
+  },
+  innerBox2: {
+    flex: 1,
+    backgroundColor: '#88B1BF',
+    margin: 10,
+  },
+  innerBox3: {
+    flex: 1,
+    backgroundColor: '#446673',
+    margin: 10,
+  },
+  innerBox4: {
+    flex: 1,
+    backgroundColor: '#CAAC26',
+    margin: 10,
+  },
+  innerBox5: {
+    flex: 1,
+    backgroundColor: '#7F6D16',
+    margin: 10,
+  },
+  innerBox6: {
+    flex: 1,
+    backgroundColor: '#883535',
+    margin: 10,
+  },
+  innerBox7: {
+    flex: 1,
+    backgroundColor: '#22CEC7',
+    margin: 10,
+  },
+  innerBox8: {
+    flex: 1,
+    backgroundColor: '#0B5250',
+    margin: 10,
+  },
+  innerBox9: {
+    flex: 1,
+    backgroundColor: '#00FFF5',
+    margin: 10,
   },
 
   grid: {
@@ -49,6 +134,31 @@ export default style = StyleSheet.create({
     borderWidth: 2,
     margin: 5,
     borderColor: '#56826C',
+  },
+  button: {
+    color: 'white',
+    margin: 10,
+    padding: 10,
+    borderRadius: 10,
+    shadowColor: 'red',
+    elevation: 10,
+    textAlign: 'center',
+    fontSize: 18,
+  },
+  button_hover: {
+    backgroundColor: 'pink',
+  },
+  success: {
+    backgroundColor: 'green',
+  },
+  warning: {
+    backgroundColor: 'orange',
+  },
+  error: {
+    backgroundColor: 'red',
+  },
+  primary: {
+    backgroundColor: 'blue',
   },
   // lable: {
   //   fontSize: 20,
