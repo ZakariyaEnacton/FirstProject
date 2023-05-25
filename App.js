@@ -18,6 +18,7 @@ import DialogModal from './components/DialogModal';
 import PressBtn from './components/ButtonPressable';
 import Statusbar from './components/Statusbar';
 import CheckPlatform from './components/CheckPlatformOs';
+import WebWindow from './components/WebSite';
 
 // function Info() {
 //   console.warn('Hey! This is function call');
@@ -38,7 +39,9 @@ const App = () => {
 
   return (
     <View>
-      <CheckPlatform />
+      <WebWindow />
+      <Text>Hello</Text>
+      {/* <CheckPlatform /> */}
       {/* <Statusbar /> */}
       {/* <PressBtn /> */}
       {/* <DialogModal /> */}
