@@ -8,18 +8,8 @@
 import React, {Component, useState} from 'react';
 import {Button, Text, TextInput, View} from 'react-native';
 
-// import User from './components/User';
-// import InputVal from './components/InputTextValue';
-// import style from './style';
-// import UserForm from './form/FormUI';
-// import ListData from './list/ListWithFlatList';
-// import ListWithMAp from './list/ListWithMap';
-// import GridLayout from './list/Grid';
-import CompWithloop from './components/ComponentInLoop';
-import SectList from './components/SectionList';
-import Student from './components/Student';
-import UseEffect from './hooks/UseEffect';
-import HideAndShow from './components/HIdeAndShow';
+import Layout from './Layoutdesign/Layout';
+
 // function Info() {
 //   console.warn('Hey! This is function call');
 // }
@@ -38,6 +28,7 @@ const App = () => {
 
   return (
     <View>
+      <Layout />
       {/* <Text style={{fontSize: 30}}>{company}</Text>
       <Button title="on Press" color={'red'} onPress={Info} />
       <Button title="Press" onPress={updateName} /> */}
@@ -50,16 +41,7 @@ const App = () => {
             setAdd('Mumbai');
         }}
       />
-      <User myName={name} myAge={age} myEmail={email} myAddress={add} /> */}
-      {/* <InputVal /> */}
-      {/* <UserForm /> */}
-      {/* <ListData /> */}
-      {/* <ListWithMAp /> */}
-      {/* <GridLayout /> */}
-      {/* <CompWithloop /> */}
-      {/* <SectList /> */}
-      {/* <UseEffect /> */}
-      <HideAndShow />
+    <User myName={name} myAge={age} myEmail={email} myAddress={add} /> */}
     </View>
   );
 };

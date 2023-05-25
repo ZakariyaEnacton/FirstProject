@@ -32,9 +32,9 @@ const SectList = () => {
       <SectionList
         sections={users}
         renderItem={({item}) => <Text style={{marginLeft: 25}}>{item}</Text>}
-        renderSectionHeader={({section: {name}}) => (
+        renderSectionHeader={({section: {id, name}}) => (
           <Text style={{marginLeft: 5, fontSize: 24, color: 'red'}}>
-            {name}
+            {id} : {name}
           </Text>
         )}
       />

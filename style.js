@@ -1,6 +1,10 @@
 import {StyleSheet} from 'react-native';
 
-export default styles = StyleSheet.create({
+export default style = StyleSheet.create({
+  main: {
+    backgroundColor: 'green',
+  },
+
   grid: {
     fontSize: 25,
     backgroundColor: '#577D6A',
