@@ -6,7 +6,7 @@ const RadioButtonUI = () => {
   const [selectRadio, setSelectRadio] = useState(1);
 
   return (
-    <View style={style.radioMain}>
+    <View>
       <TouchableOpacity onPress={() => setSelectRadio(1)}>
         <View style={style.radioWrapper}>
           <View style={style.radio}>
@@ -20,7 +20,7 @@ const RadioButtonUI = () => {
           <View style={style.radio}>
             {selectRadio === 2 ? <View style={style.radioBg}></View> : null}
           </View>
-          <Text style={style.radioText}>Radio Button 1</Text>
+          <Text style={style.radioText}>Radio Button 2</Text>
         </View>
       </TouchableOpacity>
       <TouchableOpacity onPress={() => setSelectRadio(3)}>
@@ -28,7 +28,7 @@ const RadioButtonUI = () => {
           <View style={style.radio}>
             {selectRadio === 3 ? <View style={style.radioBg}></View> : null}
           </View>
-          <Text style={style.radioText}>Radio Button 1</Text>
+          <Text style={style.radioText}>Radio Button 3</Text>
         </View>
       </TouchableOpacity>
     </View>
