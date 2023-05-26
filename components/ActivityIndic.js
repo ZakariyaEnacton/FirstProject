@@ -14,7 +14,11 @@ const ActInd = () => {
   return (
     <View style={style.radioMain}>
       <ActivityIndicator size={50} animating={show} color="#558853" />
-      <Button title="Show Indicator" onPress={displayLoader} />
+      <Button
+        title="Show Indicator"
+        onPress={displayLoader}
+        accessibilityLabel="Hello"
+      />
     </View>
   );
 };
