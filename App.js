@@ -19,6 +19,7 @@ import PressBtn from './components/ButtonPressable';
 import Statusbar from './components/Statusbar';
 import CheckPlatform from './components/CheckPlatformOs';
 import WebWindow from './components/WebSite';
+import CustMod from './components/CustomModal';
 
 // function Info() {
 //   console.warn('Hey! This is function call');
@@ -38,9 +39,10 @@ const App = () => {
   const [selectRadio, setSelectRadio] = useState();
 
   return (
-    <View>
-      <WebWindow />
-      <Text>Hello</Text>
+    <View style={style.container}>
+      <CustMod />
+      {/* <WebWindow />
+      <Text>Hello</Text> */}
       {/* <CheckPlatform /> */}
       {/* <Statusbar /> */}
       {/* <PressBtn /> */}
