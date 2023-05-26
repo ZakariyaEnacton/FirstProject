@@ -48,7 +48,7 @@ const App = () => {
   const [selectRadio, setSelectRadio] = useState();
 
   return (
-    <View>
+    <View style={style.imageContainer}>
       <ImgExmp />
     </View>
     // <NavigationContainer>

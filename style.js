@@ -298,6 +298,28 @@ export default style = StyleSheet.create({
     fontWeight: 400,
     fontFamily: 'times new roman',
   },
+  imageStyle: {
+    width: 150,
+    height: 150,
+    margin: 10,
+    borderRadius: 75,
+  },
+  imageContainer: {
+    flex: 1,
+    // alignItems: 'center',
+  },
+  textImage: {
+    color: 'white',
+    fontSize: 24,
+    textAlign: 'center',
+    backgroundColor: '#000000c0',
+    padding: 10,
+    fontWeight: 500,
+  },
+  imageBg: {
+    flex: 1,
+    justifyContent: 'center',
+  },
   // lable: {
   //   fontSize: 20,
   //   color: 'brown',
