@@ -311,14 +311,16 @@ export default style = StyleSheet.create({
   textImage: {
     color: 'white',
     fontSize: 24,
+    lineHeight: 65,
     textAlign: 'center',
     backgroundColor: '#000000c0',
-    padding: 10,
     fontWeight: 500,
   },
   imageBg: {
     flex: 1,
     justifyContent: 'center',
+    borderTopStartRadius: 20,
+    margin: 10,
   },
   // lable: {
   //   fontSize: 20,
