@@ -38,6 +38,7 @@ const CompWithloop = () => {
       <FlatList
         data={users}
         renderItem={({item}) => <UserData data={item} />}
+        scrollEnabled
       />
     </View>
   );
