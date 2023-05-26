@@ -10,6 +10,7 @@ import {Button, Text, TextInput, View, TouchableOpacity} from 'react-native';
 import {NavigationContainer} from '@react-navigation/native';
 import {createNativeStackNavigator} from '@react-navigation/native-stack';
 // import Compo from './Layoutdesign/Compo';
+import CompWithloop from './components/ComponentInLoop';
 // import SectList from './components/SectionList';
 import StyleWithButton from './components/StyleWithButton';
 import RadioButtonUI from './components/Radio';
@@ -25,6 +26,8 @@ import CustMod from './components/CustomModal';
 import Login from './components/Login';
 import Home from './components/Home';
 import User from './components/User';
+import FlatListExample from './components/FlatListExample';
+import ImgExmp from './components/ImageExample';
 
 // function Info() {
 //   console.warn('Hey! This is function call');
@@ -45,12 +48,17 @@ const App = () => {
   const [selectRadio, setSelectRadio] = useState();
 
   return (
-    <NavigationContainer>
-      <Stack.Navigator>
-        <Stack.Screen name="Login" component={Login} />
-        <Stack.Screen name="Home" component={Home} />
-      </Stack.Navigator>
-    </NavigationContainer>
+    <View>
+      <ImgExmp />
+    </View>
+    // <NavigationContainer>
+    //   <Stack.Navigator>
+    //     <Stack.Screen name="Login" component={Login} />
+    //     <Stack.Screen name="Home" component={Home} />
+    //   </Stack.Navigator>
+    //   {/* <FlatListExample /> */}
+    //   {/* <ActInd /> */}
+    // </NavigationContainer>
     // <View style={style.container}>
     //   <CustMod />
     //   {/* <WebWindow />
@@ -59,7 +67,6 @@ const App = () => {
     //   {/* <Statusbar /> */}
     //   {/* <PressBtn /> */}
     //   {/* <DialogModal /> */}
-    //   {/* <ActInd /> */}
     //   {/* <DynaRadio /> */}
     //   {/* <RadioButtonUI /> */}
     //   {/* <SectList /> */}
