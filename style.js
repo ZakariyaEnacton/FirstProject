@@ -251,6 +251,53 @@ export default style = StyleSheet.create({
   closeBtn: {
     backgroundColor: 'red',
   },
+  loginText: {
+    fontSize: 18,
+    fontWeight: 500,
+    margin: 2,
+  },
+  loginInputText: {
+    borderWidth: 1,
+    borderRadius: 10,
+    padding: 10,
+    margin: 5,
+    fontSize: 14,
+  },
+  loginFieldView: {
+    margin: 10,
+  },
+  loginBtn: {
+    textAlign: 'center',
+    backgroundColor: '#40bf80',
+    padding: 10,
+    borderRadius: 10,
+    fontSize: 16,
+    fontWeight: 500,
+    color: '#fff',
+    margin: 5,
+  },
+  homeContainer: {
+    flex: 1,
+    justifyContent: 'center',
+  },
+  homeHeading: {
+    fontSize: 24,
+    margin: 5,
+    color: 'green',
+    fontWeight: 800,
+    textAlign: 'center',
+  },
+  homeInfo: {
+    margin: 10,
+    backgroundColor: 'rgba(70, 70, 70,0.1)',
+    borderRadius: 10,
+    padding: 10,
+  },
+  homeText: {
+    fontSize: 16,
+    fontWeight: 400,
+    fontFamily: 'times new roman',
+  },
   // lable: {
   //   fontSize: 20,
   //   color: 'brown',

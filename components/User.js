@@ -1,14 +1,19 @@
 import {StyleSheet, Text, View} from 'react-native';
 import ExStyle from '../style';
 
-const User = val => {
+const User = props => {
   // console.warn(props.name);
+  {
+    console.log('Value', props);
+  }
   return (
     <View style={style.view}>
-      <Text style={ExStyle.textView}>Name : {val.myName}</Text>
-      <Text style={style.text}>Age : {val.myAge}</Text>
-      <Text style={style.text}>Email : {val.myEmail}</Text>
-      <Text style={[style.text, ExStyle.textView]}>Add : {val.myAddress}</Text>
+      <Text style={ExStyle.textView}>Name : {props.myName}</Text>
+      <Text style={style.text}>Age : {props.myAge}</Text>
+      <Text style={style.text}>Email : {props.myEmail}</Text>
+      <Text style={[style.text, ExStyle.textView]}>
+        Add : {props.myAddress}
+      </Text>
     </View>
   );
 };

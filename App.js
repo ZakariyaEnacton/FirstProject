@@ -7,6 +7,8 @@
 
 import React, {Component, useState} from 'react';
 import {Button, Text, TextInput, View, TouchableOpacity} from 'react-native';
+import {NavigationContainer} from '@react-navigation/native';
+import {createNativeStackNavigator} from '@react-navigation/native-stack';
 // import Compo from './Layoutdesign/Compo';
 // import SectList from './components/SectionList';
 import StyleWithButton from './components/StyleWithButton';
@@ -20,54 +22,64 @@ import Statusbar from './components/Statusbar';
 import CheckPlatform from './components/CheckPlatformOs';
 import WebWindow from './components/WebSite';
 import CustMod from './components/CustomModal';
+import Login from './components/Login';
+import Home from './components/Home';
+import User from './components/User';
 
 // function Info() {
 //   console.warn('Hey! This is function call');
 // }
 
+const Stack = createNativeStackNavigator();
 const App = () => {
   // function updateName() {
   //   setCompany('EnactOn Technology');
   // }
 
   // let person = 'Jhon';
-  // const [company, setCompany] = useState('EnactOn');
-  // const [name, setName] = useState('Jhon');
-  // const [age, setAge] = useState(20);
-  // const [email, setEmail] = useState('jhon@test.com');
-  // const [add, setAdd] = useState('Surat');
+  const [company, setCompany] = useState('EnactOn');
+  const [name, setName] = useState('Jhon');
+  const [age, setAge] = useState(20);
+  const [email, setEmail] = useState('jhon@test.com');
+  const [add, setAdd] = useState('Surat');
   const [selectRadio, setSelectRadio] = useState();
 
   return (
-    <View style={style.container}>
-      <CustMod />
-      {/* <WebWindow />
-      <Text>Hello</Text> */}
-      {/* <CheckPlatform /> */}
-      {/* <Statusbar /> */}
-      {/* <PressBtn /> */}
-      {/* <DialogModal /> */}
-      {/* <ActInd /> */}
-      {/* <DynaRadio /> */}
-      {/* <RadioButtonUI /> */}
-      {/* <SectList /> */}
-      {/* <Text style={{fontSize: 30}}>{company}</Text>
-      <Button title="on Press" color={'red'} onPress={Info} />
-    <Button title="Press" onPress={updateName} /> */}
-      {/* <Button
-        title="Update Name"
-        onPress={() => {
-          setName('Mike'),
-          setAge(22),
-          setEmail('mike@test.com'),
-          setAdd('Mumbai');
-        }}
-        />
-      <User myName={name} myAge={age} myEmail={email} myAddress={add} /> */}
-      {/* <Text>Hello</Text> */}
-      {/* <Compo /> */}
-      {/* <StyleWithButton /> */}
-    </View>
+    <NavigationContainer>
+      <Stack.Navigator>
+        <Stack.Screen name="Login" component={Login} />
+        <Stack.Screen name="Home" component={Home} />
+      </Stack.Navigator>
+    </NavigationContainer>
+    // <View style={style.container}>
+    //   <CustMod />
+    //   {/* <WebWindow />
+    //   <Text>Hello</Text> */}
+    //   {/* <CheckPlatform /> */}
+    //   {/* <Statusbar /> */}
+    //   {/* <PressBtn /> */}
+    //   {/* <DialogModal /> */}
+    //   {/* <ActInd /> */}
+    //   {/* <DynaRadio /> */}
+    //   {/* <RadioButtonUI /> */}
+    //   {/* <SectList /> */}
+    //   {/* <Text style={{fontSize: 30}}>{company}</Text>
+    //   <Button title="on Press" color={'red'} onPress={Info} />
+    // <Button title="Press" onPress={updateName} /> */}
+    //   {/* <Button
+    //     title="Update Name"
+    //     onPress={() => {
+    //       setName('Mike'),
+    //       setAge(22),
+    //       setEmail('mike@test.com'),
+    //       setAdd('Mumbai');
+    //     }}
+    //     />*/
+    // {/* <User myName={name} myAge={age} myEmail={email} myAddress={add} /> */}
+    //   {/* <Text>Hello</Text> */}
+    //   {/* <Compo /> */}
+    //   {/* <StyleWithButton /> */}
+    // </View>
   );
 };
 
