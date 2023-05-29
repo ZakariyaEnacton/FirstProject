@@ -16,7 +16,6 @@ import StyleWithButton from './src/components/StyleWithButton';
 import RadioButtonUI from './src/components/Radio';
 import DynaRadio from './src/components/DynamicRadio';
 import ActInd from './src/components/ActivityIndic';
-import style from './src/style/style';
 import DialogModal from './src/components/DialogModal';
 import PressBtn from './src/components/ButtonPressable';
 import Statusbar from './src/components/Statusbar';
