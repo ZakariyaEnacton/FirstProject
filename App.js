@@ -11,7 +11,7 @@ import {NavigationContainer} from '@react-navigation/native';
 import {createNativeStackNavigator} from '@react-navigation/native-stack';
 // import Compo from './Layoutdesign/Compo';
 import CompWithloop from './components/ComponentInLoop';
-// import SectList from './components/SectionList';
+import SectList from './components/SectionList';
 import StyleWithButton from './components/StyleWithButton';
 import RadioButtonUI from './components/Radio';
 import DynaRadio from './components/DynamicRadio';
@@ -28,6 +28,9 @@ import Home from './components/Home';
 import User from './components/User';
 import FlatListExample from './components/FlatListExample';
 import ImgExmp from './components/ImageExample';
+import KeyboardAvoiding from './components/KeyboardAvoidingCompoonent';
+import RefControlView from './components/RefControlView';
+import ScrolViewCompo from './components/ScrolViewComponent';
 
 // function Info() {
 //   console.warn('Hey! This is function call');
@@ -48,8 +51,12 @@ const App = () => {
   const [selectRadio, setSelectRadio] = useState();
 
   return (
-    <View style={style.imageContainer}>
-      <ImgExmp />
+    <View style={{flex: 1}}>
+      <SectList />
+      {/* <ImgExmp /> */}
+      {/* <KeyboardAvoiding /> */}
+      {/* <RefControlView /> */}
+      {/* <ScrolViewCompo /> */}
     </View>
     // <NavigationContainer>
     //   <Stack.Navigator>
@@ -69,7 +76,6 @@ const App = () => {
     //   {/* <DialogModal /> */}
     //   {/* <DynaRadio /> */}
     //   {/* <RadioButtonUI /> */}
-    //   {/* <SectList /> */}
     //   {/* <Text style={{fontSize: 30}}>{company}</Text>
     //   <Button title="on Press" color={'red'} onPress={Info} />
     // <Button title="Press" onPress={updateName} /> */}
