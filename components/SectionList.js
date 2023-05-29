@@ -26,17 +26,41 @@ const SectList = () => {
     },
   ];
 
+  const SectionItem = props => {
+    return (
+      <View>
+        <Text style={{marginLeft: 25}}>{props.item}</Text>
+      </View>
+    );
+  };
+
+  const SectionFooter = props => {
+    return (
+      <View>
+        <Text>{props}</Text>
+      </View>
+    );
+  };
+
+  const SectionHeader = (props, props1) => {
+    return (
+      <View>
+        {console.log('props:', props, 'props1:', props1)}
+        <Text style={{marginLeft: 5, fontSize: 24, color: 'red'}}>
+          {props} : {props1}
+        </Text>
+      </View>
+    );
+  };
+
   return (
     <View>
       <Text style={style.text}>Section List React Native</Text>
       <SectionList
+        renderSectionFooter={({section: {name}}) => SectionFooter(name)}
         sections={users}
-        renderItem={({item}) => <Text style={{marginLeft: 25}}>{item}</Text>}
-        renderSectionHeader={({section: {id, name}}) => (
-          <Text style={{marginLeft: 5, fontSize: 24, color: 'red'}}>
-            {id} : {name}
-          </Text>
-        )}
+        renderItem={item => SectionItem(item)}
+        renderSectionHeader={({section: {id, name}}) => SectionHeader(id, name)}
       />
     </View>
   );
