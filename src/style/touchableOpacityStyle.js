@@ -1,10 +1,15 @@
-import React from 'react';
 import {StyleSheet} from 'react-native';
 
 export default tochableStyle = StyleSheet.create({
-  button: {
-    flex: 1,
-    backgroundColor: '#dddddd',
+  touchButton: {
+    backgroundColor: '#3E4752',
     padding: 10,
+    alignItems: 'center',
+    marginRight: 50,
+    marginLeft: 50,
+  },
+  touchText: {
+    color: 'white',
+    fontSize: 18,
   },
 });

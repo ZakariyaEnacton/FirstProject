@@ -10,27 +10,27 @@ import {Button, Text, TextInput, View, TouchableOpacity} from 'react-native';
 import {NavigationContainer} from '@react-navigation/native';
 import {createNativeStackNavigator} from '@react-navigation/native-stack';
 // import Compo from './Layoutdesign/Compo';
-import CompWithloop from './src/components/ComponentInLoop';
-import SectList from './src/components/SectionList';
-import StyleWithButton from './src/components/StyleWithButton';
-import RadioButtonUI from './src/components/Radio';
-import DynaRadio from './src/components/DynamicRadio';
-import ActInd from './src/components/ActivityIndic';
-import DialogModal from './src/components/DialogModal';
-import PressBtn from './src/components/ButtonPressable';
-import Statusbar from './src/components/Statusbar';
-import CheckPlatform from './src/components/CheckPlatformOs';
-import WebWindow from './src/components/WebSite';
-import CustMod from './src/components/CustomModal';
-import Login from './src/components/Login';
-import Home from './src/components/Home';
-import User from './src/components/User';
-import FlatListExample from './src/components/FlatListExample';
-import ImgExmp from './src/components/ImageExample';
-import KeyboardAvoiding from './src/components/KeyboardAvoidingCompoonent';
-import RefControlView from './src/components/RefControlView';
-import ScrolViewCompo from './src/components/ScrolViewComponent';
-import SwitchComponent from './src/components/SwitchComponent';
+// import CompWithloop from './src/components/ComponentInLoop';
+// import SectList from './src/components/SectionList';
+// import StyleWithButton from './src/components/StyleWithButton';
+// import RadioButtonUI from './src/components/Radio';
+// import DynaRadio from './src/components/DynamicRadio';
+// import ActInd from './src/components/ActivityIndic';
+// import DialogModal from './src/components/DialogModal';
+// import PressBtn from './src/components/ButtonPressable';
+// import Statusbar from './src/components/Statusbar';
+// import CheckPlatform from './src/components/CheckPlatformOs';
+// import WebWindow from './src/components/WebSite';
+// import CustMod from './src/components/CustomModal';
+// import Login from './src/components/Login';
+// import Home from './src/components/Home';
+// import User from './src/components/User';
+// import FlatListExample from './src/components/FlatListExample';
+// import ImgExmp from './src/components/ImageExample';
+// import KeyboardAvoiding from './src/components/KeyboardAvoidingCompoonent';
+// import RefControlView from './src/components/RefControlView';
+// import ScrolViewCompo from './src/components/ScrolViewComponent';
+// import SwitchComponent from './src/components/SwitchComponent';
 import ButtonTouchableOpacity from './src/components/ButtonTouchableOpacity';
 
 // function Info() {
@@ -52,7 +52,7 @@ const App = () => {
   const [selectRadio, setSelectRadio] = useState();
 
   return (
-    <View style={{flex: 1, justifyContent: 'center', alignItems: 'center'}}>
+    <View style={{flex: 1, justifyContent: 'center'}}>
       {/* <SectList /> */}
       {/* <SwitchComponent /> */}
       <ButtonTouchableOpacity />
