@@ -1,6 +1,6 @@
 import React from 'react';
 import {Text, View, SectionList} from 'react-native';
-import style from '../../style';
+import style from '../style/style';
 
 const SectList = () => {
   const users = [

@@ -1,6 +1,6 @@
 import React from 'react';
 import {StyleSheet, Text, View} from 'react-native';
-import style from '../style';
+import style from '../src/style/style';
 
 const Compo = () => {
   return (

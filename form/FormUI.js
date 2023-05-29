@@ -1,6 +1,6 @@
 import React, {useState} from 'react';
 import {Button, Text, TextInput, View} from 'react-native';
-import style from '../style';
+import style from '../src/style/style';
 import {transformer} from '../metro.config';
 
 const UserForm = () => {

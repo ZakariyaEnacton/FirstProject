@@ -1,6 +1,6 @@
 import React, {useState} from 'react';
 import {Button, Modal, Text, TouchableHighlight, View} from 'react-native';
-import style from '../../style';
+import style from '../style/style';
 
 const DialogModal = () => {
   const [open, setOpen] = useState(false);

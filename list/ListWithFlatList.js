@@ -1,6 +1,6 @@
 import React from 'react';
 import {FlatList, Text, View} from 'react-native';
-import style from '../style';
+import style from '../src/style/style';
 
 const ListData = () => {
   const user = [

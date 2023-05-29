@@ -1,6 +1,6 @@
 import React from 'react';
 import {Pressable, View, Text} from 'react-native';
-import style from '../../style';
+import style from '../style/style';
 
 const PressBtn = () => {
   return (
