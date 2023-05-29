@@ -34,6 +34,7 @@ import {createNativeStackNavigator} from '@react-navigation/native-stack';
 import ButtonTouchableOpacity from './src/components/ButtonTouchableOpacity';
 import ButtonTouchWithoutFeedback from './src/components/ButtonTouchableWithoutFeedback';
 import UseStateExample from './src/Hook/UseState';
+import CallbackHook from './src/Hook/CallbackHook';
 
 // function Info() {
 //   console.warn('Hey! This is function call');
@@ -55,7 +56,7 @@ const App = () => {
 
   return (
     <View style={{flex: 1, justifyContent: 'center', alignItems: 'center'}}>
-      <UseStateExample />
+      <CallbackHook />
       {/* <SectList /> */}
       {/* <SwitchComponent /> */}
       {/* <ButtonTouchableOpacity /> */}
