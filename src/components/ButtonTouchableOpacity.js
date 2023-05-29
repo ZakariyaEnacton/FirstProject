@@ -5,8 +5,8 @@ import touchableOpacityStyle from '../style/touchableOpacityStyle';
 const ButtonTouchableOpacity = () => {
   return (
     <View>
-      <TouchableOpacity style={{backgroundColor: 'green'}}>
-        <Text>Click Here</Text>
+      <TouchableOpacity activeOpacity={0.5} style={tochableStyle.touchButton}>
+        <Text style={touchableOpacityStyle.touchText}>Click Here</Text>
       </TouchableOpacity>
     </View>
   );
