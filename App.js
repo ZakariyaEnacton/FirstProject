@@ -10,28 +10,29 @@ import {Button, Text, TextInput, View, TouchableOpacity} from 'react-native';
 import {NavigationContainer} from '@react-navigation/native';
 import {createNativeStackNavigator} from '@react-navigation/native-stack';
 // import Compo from './Layoutdesign/Compo';
-import CompWithloop from './components/ComponentInLoop';
-import SectList from './components/SectionList';
-import StyleWithButton from './components/StyleWithButton';
-import RadioButtonUI from './components/Radio';
-import DynaRadio from './components/DynamicRadio';
-import ActInd from './components/ActivityIndic';
+import CompWithloop from './src/components/ComponentInLoop';
+import SectList from './src/components/SectionList';
+import StyleWithButton from './src/components/StyleWithButton';
+import RadioButtonUI from './src/components/Radio';
+import DynaRadio from './src/components/DynamicRadio';
+import ActInd from './src/components/ActivityIndic';
 import style from './style';
-import DialogModal from './components/DialogModal';
-import PressBtn from './components/ButtonPressable';
-import Statusbar from './components/Statusbar';
-import CheckPlatform from './components/CheckPlatformOs';
-import WebWindow from './components/WebSite';
-import CustMod from './components/CustomModal';
-import Login from './components/Login';
-import Home from './components/Home';
-import User from './components/User';
-import FlatListExample from './components/FlatListExample';
-import ImgExmp from './components/ImageExample';
-import KeyboardAvoiding from './components/KeyboardAvoidingCompoonent';
-import RefControlView from './components/RefControlView';
-import ScrolViewCompo from './components/ScrolViewComponent';
-import SwitchComponent from './components/SwitchComponent';
+import DialogModal from './src/components/DialogModal';
+import PressBtn from './src/components/ButtonPressable';
+import Statusbar from './src/components/Statusbar';
+import CheckPlatform from './src/components/CheckPlatformOs';
+import WebWindow from './src/components/WebSite';
+import CustMod from './src/components/CustomModal';
+import Login from './src/components/Login';
+import Home from './src/components/Home';
+import User from './src/components/User';
+import FlatListExample from './src/components/FlatListExample';
+import ImgExmp from './src/components/ImageExample';
+import KeyboardAvoiding from './src/components/KeyboardAvoidingCompoonent';
+import RefControlView from './src/components/RefControlView';
+import ScrolViewCompo from './src/components/ScrolViewComponent';
+import SwitchComponent from './src/components/SwitchComponent';
+import ButtonTouchableOpacity from './src/components/ButtonTouchableOpacity';
 
 // function Info() {
 //   console.warn('Hey! This is function call');
@@ -54,7 +55,8 @@ const App = () => {
   return (
     <View style={{flex: 1, justifyContent: 'center', alignItems: 'center'}}>
       {/* <SectList /> */}
-      <SwitchComponent />
+      {/* <SwitchComponent /> */}
+      <ButtonTouchableOpacity />
       {/* <ImgExmp /> */}
       {/* <KeyboardAvoiding /> */}
       {/* <RefControlView /> */}

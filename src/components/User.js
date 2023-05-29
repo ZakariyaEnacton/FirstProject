@@ -1,5 +1,5 @@
 import {StyleSheet, Text, View} from 'react-native';
-import ExStyle from '../style';
+import ExStyle from '../../style';
 
 const User = props => {
   // console.warn(props.name);

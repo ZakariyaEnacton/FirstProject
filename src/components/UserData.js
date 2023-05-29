@@ -1,5 +1,5 @@
 import {Text, View} from 'react-native';
-import style from '../style';
+import style from '../../style';
 
 const UserData = props => {
   const getData = props.data;

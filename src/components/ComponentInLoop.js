@@ -1,6 +1,6 @@
 import React from 'react';
 import {FlatList, Text, View} from 'react-native';
-import style from '../style';
+import style from '../../style';
 import UserData from './UserData';
 
 const CompWithloop = () => {

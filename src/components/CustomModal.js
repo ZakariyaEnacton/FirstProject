@@ -1,6 +1,6 @@
 import React, {useState} from 'react';
 import {Text, TouchableHighlight, View} from 'react-native';
-import style from '../style';
+import style from '../../style';
 
 const CustMod = () => {
   const [show, setShow] = useState(false);

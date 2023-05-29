@@ -1,6 +1,6 @@
 import React from 'react';
 import {FlatList, Image, ImageBackground, Text, View} from 'react-native';
-import style from '../style';
+import style from '../../style';
 
 const ImgExmp = () => {
   const imageList = [

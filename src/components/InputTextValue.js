@@ -1,6 +1,6 @@
 import React, {useState} from 'react';
 import {Text, TextInput, View, Button} from 'react-native';
-import styles from '../style';
+import styles from '../../style';
 
 const InputVal = () => {
   const [name, setName] = useState('');

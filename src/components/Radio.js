@@ -1,6 +1,6 @@
 import React, {useState} from 'react';
 import {Text, TouchableOpacity, View} from 'react-native';
-import style from '../style';
+import style from '../../style';
 
 const RadioButtonUI = () => {
   const [selectRadio, setSelectRadio] = useState(1);
