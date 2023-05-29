@@ -32,6 +32,8 @@ import {createNativeStackNavigator} from '@react-navigation/native-stack';
 // import ScrolViewCompo from './src/components/ScrolViewComponent';
 // import SwitchComponent from './src/components/SwitchComponent';
 import ButtonTouchableOpacity from './src/components/ButtonTouchableOpacity';
+import ButtonTouchWithoutFeedback from './src/components/ButtonTouchableWithoutFeedback';
+import UseStateExample from './src/Hook/UseState';
 
 // function Info() {
 //   console.warn('Hey! This is function call');
@@ -52,10 +54,12 @@ const App = () => {
   const [selectRadio, setSelectRadio] = useState();
 
   return (
-    <View style={{flex: 1, justifyContent: 'center'}}>
+    <View style={{flex: 1, justifyContent: 'center', alignItems: 'center'}}>
+      <UseStateExample />
       {/* <SectList /> */}
       {/* <SwitchComponent /> */}
-      <ButtonTouchableOpacity />
+      {/* <ButtonTouchableOpacity /> */}
+      {/* <ButtonTouchWithoutFeedback /> */}
       {/* <ImgExmp /> */}
       {/* <KeyboardAvoiding /> */}
       {/* <RefControlView /> */}
