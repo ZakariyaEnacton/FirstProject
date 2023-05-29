@@ -10,6 +10,7 @@ const ImgExmp = () => {
         <Image
           style={style.imageStyle}
           source={require('../assets/image1.jpeg')}
+          // source={require('/assets/image1.jpeg')}
         />
       ),
     },
