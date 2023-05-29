@@ -31,6 +31,7 @@ import ImgExmp from './components/ImageExample';
 import KeyboardAvoiding from './components/KeyboardAvoidingCompoonent';
 import RefControlView from './components/RefControlView';
 import ScrolViewCompo from './components/ScrolViewComponent';
+import SwitchComponent from './components/SwitchComponent';
 
 // function Info() {
 //   console.warn('Hey! This is function call');
@@ -51,8 +52,9 @@ const App = () => {
   const [selectRadio, setSelectRadio] = useState();
 
   return (
-    <View style={{flex: 1}}>
-      <SectList />
+    <View style={{flex: 1, justifyContent: 'center', alignItems: 'center'}}>
+      {/* <SectList /> */}
+      <SwitchComponent />
       {/* <ImgExmp /> */}
       {/* <KeyboardAvoiding /> */}
       {/* <RefControlView /> */}
