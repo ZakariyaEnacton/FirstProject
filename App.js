@@ -12,6 +12,7 @@ import {createNativeStackNavigator} from '@react-navigation/native-stack';
 import UseDebugValueHook from './src/Hook/UseDebugValue';
 import UseLayoutEffectHook from './src/Hook/UseLayoutEffectHook';
 import MemoHook from './src/Hook/MemoHook';
+import UseReducerHook from './src/Hook/UseReducerHook';
 // import Compo from './Layoutdesign/Compo';
 // import CompWithloop from './src/components/ComponentInLoop';
 // import SectList from './src/components/SectionList';
@@ -65,7 +66,8 @@ const App = () => {
         justifyContent: 'center',
         alignItems: 'center',
       }}>
-      <MemoHook />
+      <UseReducerHook />
+      {/* <MemoHook /> */}
       {/* <ContextHookExample /> */}
       {/* <CallbackHook /> */}
       {/* <SectList /> */}
