@@ -11,6 +11,7 @@ import {NavigationContainer} from '@react-navigation/native';
 import {createNativeStackNavigator} from '@react-navigation/native-stack';
 import UseDebugValueHook from './src/Hook/UseDebugValue';
 import UseLayoutEffectHook from './src/Hook/UseLayoutEffectHook';
+import MemoHook from './src/Hook/MemoHook';
 // import Compo from './Layoutdesign/Compo';
 // import CompWithloop from './src/components/ComponentInLoop';
 // import SectList from './src/components/SectionList';
@@ -64,7 +65,7 @@ const App = () => {
         justifyContent: 'center',
         alignItems: 'center',
       }}>
-      <UseLayoutEffectHook />
+      <MemoHook />
       {/* <ContextHookExample /> */}
       {/* <CallbackHook /> */}
       {/* <SectList /> */}
