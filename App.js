@@ -9,6 +9,7 @@ import React, {Component, useState} from 'react';
 import {Button, Text, TextInput, View, TouchableOpacity} from 'react-native';
 import {NavigationContainer} from '@react-navigation/native';
 import {createNativeStackNavigator} from '@react-navigation/native-stack';
+import UseDebugValueHook from './src/Hook/UseDebugValue';
 // import Compo from './Layoutdesign/Compo';
 // import CompWithloop from './src/components/ComponentInLoop';
 // import SectList from './src/components/SectionList';
@@ -31,11 +32,11 @@ import {createNativeStackNavigator} from '@react-navigation/native-stack';
 // import RefControlView from './src/components/RefControlView';
 // import ScrolViewCompo from './src/components/ScrolViewComponent';
 // import SwitchComponent from './src/components/SwitchComponent';
-import ButtonTouchableOpacity from './src/components/ButtonTouchableOpacity';
-import ButtonTouchWithoutFeedback from './src/components/ButtonTouchableWithoutFeedback';
-import UseStateExample from './src/Hook/UseState';
-import CallbackHook from './src/Hook/CallbackHook';
-import ContextHookExample from './src/Hook/ContextHook';
+// import ButtonTouchableOpacity from './src/components/ButtonTouchableOpacity';
+// import ButtonTouchWithoutFeedback from './src/components/ButtonTouchableWithoutFeedback';
+// import UseStateExample from './src/Hook/UseState';
+// import CallbackHook from './src/Hook/CallbackHook';
+// import ContextHookExample from './src/Hook/ContextHook';
 
 // function Info() {
 //   console.warn('Hey! This is function call');
@@ -48,16 +49,22 @@ const App = () => {
   // }
 
   // let person = 'Jhon';
-  const [company, setCompany] = useState('EnactOn');
-  const [name, setName] = useState('Jhon');
-  const [age, setAge] = useState(20);
-  const [email, setEmail] = useState('jhon@test.com');
-  const [add, setAdd] = useState('Surat');
-  const [selectRadio, setSelectRadio] = useState();
+  // const [company, setCompany] = useState('EnactOn');
+  // const [name, setName] = useState('Jhon');
+  // const [age, setAge] = useState(20);
+  // const [email, setEmail] = useState('jhon@test.com');
+  // const [add, setAdd] = useState('Surat');
+  // const [selectRadio, setSelectRadio] = useState();
 
   return (
-    <View>
-      <ContextHookExample />
+    <View
+      style={{
+        flex: 1,
+        justifyContent: 'center',
+        alignItems: 'center',
+      }}>
+      <UseDebugValueHook />
+      {/* <ContextHookExample /> */}
       {/* <CallbackHook /> */}
       {/* <SectList /> */}
       {/* <SwitchComponent /> */}
