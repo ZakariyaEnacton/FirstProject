@@ -21,19 +21,27 @@ const UseReducerHook = () => {
   const [state, dispatch] = useReducer(reducer, initialState);
   return (
     <>
-      <Text>UseReducerHook</Text>
+      <Text style={reducerStyle.reducerTitle}>UseReducerHook</Text>
       <View>
-        <Text>{state.count}</Text>
+        <Text style={reducerStyle.reducerText}>{state.count}</Text>
       </View>
       <View style={reducerStyle.reducerBtnWrapper}>
-        <TouchableOpacity onPress={() => dispatch({type: 'increament'})}>
-          <Text style={reducerStyle.reducerBtnText}>+</Text>
+        <TouchableOpacity
+          activeOpacity={0.6}
+          onPress={() => dispatch({type: 'increament'})}>
+          <Text style={[reducerStyle.reducerBtnText, {marginRight: 20}]}>
+            +
+          </Text>
         </TouchableOpacity>
-        <TouchableOpacity onPress={() => dispatch({type: 'decreament'})}>
+        <TouchableOpacity
+          activeOpacity={0.6}
+          onPress={() => dispatch({type: 'decreament'})}>
           <Text style={reducerStyle.reducerBtnText}>-</Text>
         </TouchableOpacity>
       </View>
-      <TouchableOpacity onPress={() => dispatch({type: 'reset'})}>
+      <TouchableOpacity
+        activeOpacity={0.6}
+        onPress={() => dispatch({type: 'reset'})}>
         <Text style={reducerStyle.reducerBtnText}>reset</Text>
       </TouchableOpacity>
     </>
