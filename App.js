@@ -9,10 +9,11 @@ import React, {Component, useState} from 'react';
 import {Button, Text, TextInput, View, TouchableOpacity} from 'react-native';
 import {NavigationContainer} from '@react-navigation/native';
 import {createNativeStackNavigator} from '@react-navigation/native-stack';
-import UseDebugValueHook from './src/Hook/UseDebugValue';
-import UseLayoutEffectHook from './src/Hook/UseLayoutEffectHook';
-import MemoHook from './src/Hook/MemoHook';
-import UseReducerHook from './src/Hook/UseReducerHook';
+// import UseDebugValueHook from './src/Hook/UseDebugValue';
+// import UseLayoutEffectHook from './src/Hook/UseLayoutEffectHook';
+// import MemoHook from './src/Hook/MemoHook';
+// import UseReducerHook from './src/Hook/UseReducerHook';
+import UseRefHook from './src/Hook/UseRefHook';
 // import Compo from './Layoutdesign/Compo';
 // import CompWithloop from './src/components/ComponentInLoop';
 // import SectList from './src/components/SectionList';
@@ -66,7 +67,8 @@ const App = () => {
         justifyContent: 'center',
         alignItems: 'center',
       }}>
-      <UseReducerHook />
+      <UseRefHook />
+      {/* <UseReducerHook /> */}
       {/* <MemoHook /> */}
       {/* <ContextHookExample /> */}
       {/* <CallbackHook /> */}
